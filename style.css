@@ -159,18 +159,16 @@ footer {
     width: 100%;
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: center;
+/* Responsive: untuk layar HP */
+@media (max-width: 600px) {
+    .product-item {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
     }
-
-    header nav ul {
-        flex-direction: column;
-        text-align: center;
-        margin-top: 1em;
-        gap: 0.5em;
+    .product-item img {
+        width: 100%;
+        height: auto;
     }
 
     #produk .product-list {
