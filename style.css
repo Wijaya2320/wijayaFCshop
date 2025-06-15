@@ -16,9 +16,9 @@ header {
     background-image: url(Gambar/wooden-floor-background.jpg);
     color: white;
     padding: 20px 0;
-    text-align: left;
+    text-align: center;
     font-size: 2.5em;
-    letter-spacing: 2px
+    letter-spacing: 2px;
 }
 
 header .container {
@@ -162,11 +162,14 @@ footer {
 }
 
 /* Responsive Layout */
-@media (max-width: 768px) {
-    header .container {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.2em;
+        padding: 12px 5px;
+        word-break: break-word;
+        line-height: 1.2;
     }
+}
     
     .product-item img {
         width: 100%;
