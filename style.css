@@ -161,13 +161,11 @@ footer {
     width: 100%;
 }
 
-/* Responsive: untuk layar HP */
-@media (max-width: 600px) {
-    .header {
-        font-size: 1.2em;          /* Ukuran font diperkecil */
-        padding: 12px 5px;         /* Padding lebih kecil */
-        word-break: break-word;    /* Mencegah teks meluber */
-        line-height: 1.2;          /* Jarak antar baris lebih rapat */
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
     }
     .product-item img {
         width: 100%;
