@@ -79,7 +79,7 @@ header nav ul li a:hover {
 
 #hero {
     background-image: url(Gambar/wooden-floor-background.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     padding: 4em 0;
     text-align: center;
