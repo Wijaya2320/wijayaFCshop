@@ -164,9 +164,18 @@ footer {
 /* Responsive Layout */
 @media (max-width: 768px) {
     header .container {
+        width: 80%;
+        margin: auto;
         flex-direction: column;
         align-items: center;
     }
+    @media (max-width: 768px) {
+  /* CSS khusus untuk tablet dan HP */
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
     header nav ul {
         flex-direction: column;
         text-align: center;
