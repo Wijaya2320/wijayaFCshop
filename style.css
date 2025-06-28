@@ -210,3 +210,8 @@ footer {
   background: #28a745;
   color: #fff;
 }
+
+.harga, .harga.member { 
+  font-size: 24px !important; 
+  z-index: 999; 
+}
