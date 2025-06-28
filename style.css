@@ -193,25 +193,3 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
-
-/* ...kode CSS lain... */
-
-.harga {
-  color: #fff;
-  background: #222;
-  padding: 2px 8px;
-  border-radius: 4px;
-  display: inline-block;
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-
-.harga.member {
-  background: #28a745;
-  color: #fff;
-}
-
-.harga, .harga.member { 
-  font-size: 24px !important; 
-  z-index: 999; 
-}
