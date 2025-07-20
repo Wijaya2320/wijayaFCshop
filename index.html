@@ -27,14 +27,15 @@
     <a href="https://forms.gle/hqTh1LRJbxHVyKi37" class="button member" target="_blank" rel="noopener noreferrer">Daftar Member</a>
     <a href="https://wa.me/6283805832234" class="button whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 </div>
-
     <main>
-        <section id="hero">
+       <section id="hero">
             <div class="container">
                 <h2>Selamat Datang di WijayaFCShop</h2>
                 <p>selesaikan masalah percetakaan anda dengan mudah dan cepat!</p>
+                <img src="Gambar/poster.jpg" alt="Poster WijayaFCShop" id="poster" style="max-width:100%; cursor:pointer;">
             </div>
         </section>
+        
         <section id="produk">
             <div class="container">
                 <h2>Produk Unggulan</h2>
@@ -99,5 +100,22 @@
             <p>&copy; 2025 WijayaFCShop. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Modal untuk zoom gambar -->
+    <div id="modal" style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.8);justify-content:center;align-items:center;">
+      <img id="modal-img" src="" alt="Poster Besar" style="max-width:90vw;max-height:90vh;box-shadow:0 0 20px #fff;">
+    </div>
+    <script>
+      const poster = document.getElementById('poster');
+      const modal = document.getElementById('modal');
+      const modalImg = document.getElementById('modal-img');
+      poster.onclick = function() {
+        modal.style.display = 'flex';
+        modalImg.src = this.src;
+      }
+      modal.onclick = function() {
+        modal.style.display = 'none';
+      }
+    </script>
 </body>
 </html>
